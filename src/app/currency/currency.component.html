@@ -1,0 +1,24 @@
+{{ currencies.table }}
+{{ currencies.effectiveDate }}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Code</th>
+        <th scope="col">Description</th>
+        <th scope="col">Ask</th>
+        <th scope="col">Bid</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let curr of currencies.rates, index as i">
+            <td>{{i+1}}</td>
+            <td>{{curr.code}}</td>
+            <td>{{curr.currency}}</td>
+            <td>{{curr.ask}}</td>
+            <td>{{curr.bid}}</td>
+        </tr>
+     
+    </tbody>
+  </table>

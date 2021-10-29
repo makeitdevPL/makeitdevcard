@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'card';
   query: string;
   constructor(){
-    this.query = "Barrot"
+    this.query = "makeITdev.pl"
   }
 
 
